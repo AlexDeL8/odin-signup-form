@@ -1,0 +1,3 @@
+function formDoNothing() {
+    return false;
+}
