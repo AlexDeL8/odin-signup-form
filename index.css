@@ -56,11 +56,69 @@ table {
 .left-image {
 	flex: 1;
 	background-image: url(./assets/green-drinks.jpg);
-	background-size: contain;
+	background-size: cover;
+	background-position: center;
+	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.25);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#left-image-logo {
+	width: 100%;
+	padding: 15px 0px;
+	box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 1);
+	margin-bottom: calc(100vh - 35vh);
+	/* This should change to calculate 25% of the .left-image height - currently a fix*/
+}
+
+#top-arrows {
+	display: none;
 }
 
 .main-content {
 	flex: 2;
 	display: flex;
 	flex-direction: column;
+}
+
+.header {
+	background-color: rgb(230, 230, 230);
+	padding-left: 3rem;
+	padding-right: 13rem;
+}
+
+.header-title {
+	font-weight: bold;
+	font-size: 1.33rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.header-title:first-child {
+	margin-top: 15vh;
+}
+
+.form-div {
+	padding-left: 3rem;
+	padding-right: 13rem;
+}
+
+.form-title {
+	color: rgb(65, 65, 65);
+	font-size: 1.33rem;
+}
+
+.submit-div {
+	background-color: rgb(230, 230, 230);
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+.submit-div > button {
+	margin: 1.5rem 0rem;
+}
+
+.submit-div > p {
+	margin: 0.33rem 0rem;
 }
