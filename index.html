@@ -31,18 +31,36 @@
             <div class="form-div">
                 <h2 class="form-title">Account Info:</h2>
                 <form id="account-form" action="formDoNothing()">
-                    <label for="first_name">FIRST NAME</label>
-                    <input name="first_name" type="text">
-                    <label for="last_name">LAST NAME</label>
-                    <input name="last_name" type="text">
-                    <label for="email">EMAIL</label>
-                    <input name="email" type="email">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input name="phone" type="text">
-                    <label for="password">PASSWORD</label>
-                    <input name="password" type="password">
-                    <label for="password_confirm">CONFIRM PASSWORD</label>
-                    <input name="password_confirm" type="password">
+                    <div class="form-fields-div">
+                        <span class="form-field">
+                            <label for="first_name">FIRST NAME</label>
+                            <input name="first_name" type="text" required>
+                        </span>
+                        <span class="form-field">
+                            <label for="last_name">LAST NAME</label>
+                            <input name="last_name" type="text" required>
+                        </span>
+                    </div>
+                    <div class="form-fields-div">
+                        <span class="form-field">
+                            <label for="email">EMAIL</label>
+                            <input name="email" type="email" required>
+                        </span>
+                        <span class="form-field">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input name="phone" type="text">
+                        </span>
+                    </div>
+                    <div class="form-fields-div">
+                        <span class="form-field">
+                            <label for="password">PASSWORD</label>
+                            <input name="password" type="password" required>
+                        </span>
+                        <span class="form-field">
+                            <label for="password_confirm">CONFIRM PASSWORD</label>
+                            <input name="password_confirm" type="password" required>
+                        </span>
+                    </div>
                 </form>
             </div>
             <div class="submit-div">
