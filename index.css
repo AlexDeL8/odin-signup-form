@@ -47,11 +47,16 @@ table {
 	border-spacing: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+
 :root {
-	--main-bg-color: rgb(230, 230, 230);
+	--main-bg-color: rgb(245, 245, 245);
+	--main-green-color: rgb(0, 130, 75);
+	--main-green-dark-color: rgb(0, 100, 60);
 }
 
 .main-container {
+	font-family: 'Akshar', sans-serif;
 	display: flex;
 	flex-direction: row;
 	height: 100vh;
@@ -104,10 +109,12 @@ table {
 }
 
 .form-div {
+	z-index: 1;
 	padding: 1rem 13rem 2rem 3rem;
 	display: flex;
 	flex-direction: column;
 	row-gap: 1.25rem;
+	box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.5);
 }
 
 .form-title {
@@ -150,6 +157,7 @@ table {
 }
 
 .submit-div {
+	height: 100%;
 	background-color: var(--main-bg-color);
 	padding-left: 3rem;
 	padding-right: 3rem;
@@ -157,8 +165,35 @@ table {
 
 .submit-div > button {
 	margin: 1.5rem 0rem;
+	padding: .8rem 3rem;
+	font-size: 1rem;
+	font-weight: bold;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	background-color: var(--main-green-color);
+}
+
+.submit-div > button:hover {
+	cursor: pointer;
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+}
+
+.submit-div > button:active {
+	cursor: pointer;
+	background-color: var(--main-green-dark-color)
 }
 
 .submit-div > p {
 	margin: 0.33rem 0rem;
+	font-size: 1.1rem;
+}
+
+.submit-div > p > a {
+	color: var(--main-green-color);
+	text-decoration: none;
+}
+
+.submit-div > p > a:hover {
+	text-decoration: underline;
 }
