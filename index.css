@@ -146,6 +146,8 @@ table {
 }
 
 .form-field > input:focus {
+	margin-left: 1px;
+	margin-right: 1px;
 	border: 1px solid dodgerblue;
 	outline: 1px solid dodgerblue;
 	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
